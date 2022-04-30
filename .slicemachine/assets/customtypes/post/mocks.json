@@ -1,0 +1,41 @@
+{
+  "id": "aaac5215-294d-4974-b5e9-bb8ebd067ef4",
+  "uid": "omnis-eos-eos",
+  "type": "post",
+  "data": {
+    "title": "enhance collaborative portals",
+    "subtitle": "generate intuitive applications",
+    "author": "recontextualize leading-edge web-readiness",
+    "banner": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+    },
+    "content": [
+      {
+        "heading": "streamline intuitive e-markets",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Sit ea minim ut voluptate consectetur aliqua in consectetur laboris anim eiusmod. Qui officia Lorem officia culpa non occaecat ullamco excepteur duis in Lorem laboris in deserunt. Aliquip incididunt exercitation magna eu non et magna labore et dolor minim.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "heading": "seize 24/365 systems",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Aliquip voluptate culpa exercitation.",
+            "spans": []
+          }
+        ]
+      }
+    ]
+  }
+}
