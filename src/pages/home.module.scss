@@ -1,1 +1,75 @@
-// TODO
+.container {
+    max-width: 720px;
+    margin: 5rem auto 0;
+    padding: 0 1rem;
+
+    img{
+        margin-bottom: 4rem;
+    }
+
+    main{
+
+    a{
+        display: block;
+        
+        margin-bottom: 3rem;
+        strong{
+            font-size: 1.75rem;
+            font-weight: 700;
+
+        }
+        p{
+            font-size: 1.125rem;
+            font-weight: 400;
+            color:var(--gray-100);
+            margin: 0.5rem 0 1.5rem;
+
+        }
+        
+        div{
+            display: flex;
+            align-items: center;
+
+            svg{
+                width: 20px;
+                height: 20px;
+                margin-right: 0.5rem;
+            }
+            time,span{
+                font-size: 0.87rem;
+                height: 20px;
+                margin: auto 0;
+                color: var(--gray-500)
+            }
+            time{
+                margin-right: 1.5rem;
+            }
+
+        }
+
+        
+
+        
+
+        &:hover{
+            strong{
+                color: var( --pink-700);
+            }
+        }
+    }
+
+    button{
+        background: transparent;
+        border: none;
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: var(--pink-700);
+
+        &.hideButton{
+            display: none;
+        }
+
+    }
+ }
+}
+

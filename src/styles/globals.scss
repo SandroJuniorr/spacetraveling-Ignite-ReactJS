@@ -27,6 +27,7 @@
 body{
   background: var(--gray-900);
   color: var(--white-900);
+  font: 400 1rem "inter", sans-serif;
 }
 
 button {
@@ -36,4 +37,5 @@ button {
 a{
   color: inherit;
   text-decoration: none;
+  cursor:pointer;
 }

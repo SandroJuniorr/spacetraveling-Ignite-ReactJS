@@ -1,3 +1,7 @@
 export default function Header() {
-  // TODO
+  return (
+  <header>
+    <img src="/assets/Logo.svg" alt="spacetraveling" />
+  </header>
+    )
 }
