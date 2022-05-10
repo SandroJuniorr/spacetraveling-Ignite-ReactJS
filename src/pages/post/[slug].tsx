@@ -40,11 +40,13 @@ interface PostProps {
 export default function Post({ post }: PostProps) {
   const router = useRouter()
   const contentWords = post.data.content.reduce((acc, prev)=>{
-   const words = PrismicDOM.RichText.asText(prev.body).split(' ')
-    return acc + words.length
+   const wordsbody = PrismicDOM.RichText.asText(prev.body).split(' ')
+   const wordsHeading = prev.heading ? prev.heading.split(' ') : []
+   const allWords = [...wordsHeading , ...wordsbody]
+    return acc + allWords.length
   },0)
 
-  const readingTime = `${Math.round(contentWords / 200)} min`
+  const readingTime = `${Math.ceil(contentWords / 200) } min`
 
    
 

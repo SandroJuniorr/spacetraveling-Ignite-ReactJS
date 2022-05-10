@@ -32,6 +32,7 @@ interface HomeProps {
 export default function Home({ postsPagination }: HomeProps) {
   const [posts, setPosts] = useState<Post[]>(postsPagination.results);
   const [next_page, setNext_page] =useState<string>( postsPagination.next_page)
+  let buttonLoadPosts;
 
   function handleLoadMorePosts(next_page: string){
     fetch(next_page)
@@ -56,6 +57,12 @@ export default function Home({ postsPagination }: HomeProps) {
 
     })
 
+  }
+  if(next_page){
+    buttonLoadPosts = <button onClick={()=>{handleLoadMorePosts(next_page)}}>
+         Carregar mais posts
+        </button>
+    
   }
 
   
@@ -87,11 +94,7 @@ export default function Home({ postsPagination }: HomeProps) {
           </a>
           </Link>
         ))}
-
-        <button className={next_page !== null ? '' : styles.hideButton }
-        onClick={()=>{handleLoadMorePosts(next_page)} }>
-          Carregar mais posts
-          </button>
+          { buttonLoadPosts}
       </main>
     </div>
     </div>
