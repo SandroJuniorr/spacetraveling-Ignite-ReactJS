@@ -8,6 +8,7 @@ import Link from 'next/link';
 
 import commonStyles from '../styles/common.module.scss';
 import styles from './home.module.scss';
+import  Head  from 'next/head';
 
 interface Post {
   uid?: string;
@@ -59,16 +60,21 @@ export default function Home({ postsPagination }: HomeProps) {
 
   
   return (
-    <div className={styles.container}>
+    <>
+    <Head>
+            <title>Posts | spacetraveling</title>
+        </Head>
+    <div className={commonStyles.container}>
+    <div className={styles.content}>
       <img src="/assets/Logo.svg" alt="logo" />
 
       <main>
         {posts.map(post => (
-          <Link href={`/posts/${post.uid}`}>
-          <a key={post.uid}>
+          <Link href={`/post/${post.uid}`} key={post.uid}>
+          <a >
             <strong>{post.data.title}</strong>
             <p>{post.data.subtitle}</p>
-             <div>
+             <div className={commonStyles.infoPost}>
             <FiCalendar />
             <time>
               {format(new Date(post.first_publication_date), 'dd MMM yyyy', {
@@ -88,6 +94,8 @@ export default function Home({ postsPagination }: HomeProps) {
           </button>
       </main>
     </div>
+    </div>
+    </>
     
   );
 }
@@ -114,11 +122,11 @@ export const getStaticProps: GetStaticProps = async () => {
       };
     }),
   };
-  console.log(postsPagination);
 
   return {
     props: {
       postsPagination,
     },
+    revalidate: 60 * 30 //30 min
   };
 };

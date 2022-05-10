@@ -1,3 +1,19 @@
-.container{
-    max-width: 1120px;
+.infoPost{
+    
+        display: flex;
+        align-items: center;
+
+        svg{
+            width: 20px;
+            height: 20px;
+            margin-right: 0.5rem;
+        }
+        time,span{
+            font-size: 0.87rem;
+            height: 20px;
+            margin: auto 0;
+            color: var(--gray-500);
+            margin-right: 1.5rem;
+        }
+
 }

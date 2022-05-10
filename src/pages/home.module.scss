@@ -1,4 +1,4 @@
-.container {
+.content {
     max-width: 720px;
     margin: 5rem auto 0;
     padding: 0 1rem;
@@ -19,43 +19,27 @@
 
         }
         p{
-            font-size: 1.125rem;
+            font-size: 1.125rem; 
             font-weight: 400;
             color:var(--gray-100);
             margin: 0.5rem 0 1.5rem;
 
         }
-        
-        div{
-            display: flex;
-            align-items: center;
-
-            svg{
-                width: 20px;
-                height: 20px;
-                margin-right: 0.5rem;
-            }
-            time,span{
-                font-size: 0.87rem;
-                height: 20px;
-                margin: auto 0;
-                color: var(--gray-500)
-            }
-            time{
-                margin-right: 1.5rem;
-            }
-
-        }
-
-        
-
-        
-
         &:hover{
             strong{
                 color: var( --pink-700);
             }
         }
+        
+       
+
+        }
+
+        
+
+        
+
+       
     }
 
     button{
@@ -71,5 +55,5 @@
 
     }
  }
-}
+
 
